@@ -15,17 +15,28 @@ What’s the pay for the top 10 skills?
  
  I used Power query(ETL)phase, the data set is from data_jobs.... i used it two create two queries;  
   First one with all the data jobs information.
- The second listing the skills for each job ID.
- Then, I transformed each query by changing column types, removing unnecessary columns, cleaning text to eliminate specific words,     and trimming excess whitespace.
+ The second listing the skills for each job ID.  
  
- <img width="920" height="269" alt="Screenshot 2026-09-08 234432" src="https://github.com/user-attachments/assets/e529e4b8-538b-42e5-a6d9-0370382c93d9" />  
+ <img width="945" height="432" alt="Screenshot 2026-09-08 235232" src="https://github.com/user-attachments/assets/5b0affdb-4e0d-4a62-8798-e8d820171893" />
+
+ Then, I transformed each query by changing column types, removing unnecessary columns, cleaning text to eliminate specific   words,and trimming excess whitespace.  
  
- Loaded the powe query to a pivot table and pivot chart to gain insights on the most sort skill per job title and country as shown in using slicers  
+<img width="189" height="358" alt="Screenshot 2026-09-09 000638" src="https://github.com/user-attachments/assets/1bd99100-0b2b-4506-a00c-20462f403960" /> 
+
+ Loaded the powe query to a pivot table and pivot chart to gain insights on the most sort skill per job title and country as shown in using slicers.  
+
+  <img width="920" height="269" alt="Screenshot 2026-09-08 234432" src="https://github.com/user-attachments/assets/e529e4b8-538b-42e5-a6d9-0370382c93d9" />  
+ 
 
  ### Power pivot
  i used it to model  the data 1 is to many relationship, used both implicit and explicit measures to achieve my analysis goal eg skill count(total skills divided by the all the jobs ) 
  
 <img width="938" height="475" alt="Screenshot 2026-09-08 235033" src="https://github.com/user-attachments/assets/11692ee9-75a3-4e85-b63b-8b95c0999593" />  
+DAX methods ;To calculate the median year salary.  
+
+```
+Median Salary := MEDIAN(data_jobs_all[salary_year_avg])
+```
 
 There is a positive correlation between the number of skills requested in job postings and the median salary, particularly in roles like Senior Data Engineer and Data Scientist.
 
@@ -33,6 +44,7 @@ There is a positive correlation between the number of skills requested in job po
  
 <img width="282" height="202" alt="Screenshot 2026-09-08 234414" src="https://github.com/user-attachments/assets/3e29ca8f-218e-4951-bee4-92cbd9ee8f06" />
 <img width="388" height="236" alt="Screenshot 2026-09-08 234401" src="https://github.com/user-attachments/assets/cbf6dd2b-91ba-4445-ba30-24e054d16cc9" />  
+
 This is the basically what is done in this analysis for more info about the project [salary.analysis.xlsx](salary.analysis.xlsx)
 
 
