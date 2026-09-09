@@ -13,7 +13,7 @@ What’s the pay for the top 10 skills?
  Power Query  
  Power Pivot 
  
- I used Power query(ETL)phase, the data set is from data_jobs.... i used it two create two queries;  
+ I used Power query(ETL)phase, the data set is from [data_jobs_salary_all.xlsx](data_jobs_salary_all.xlsx)  i used it two     create two queries;  
   First one with all the data jobs information.
  The second listing the skills for each job ID.  
  
